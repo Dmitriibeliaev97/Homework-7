@@ -103,6 +103,10 @@ public class Main {
     }
     public static void task7 () {
         System.out.println("Задача 7");
+        int firstFriday = 5;
+        for (int i = firstFriday; i <= 31; i += 7) {
+            System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет");
+        }
 
     }
     public static void task8 () {
