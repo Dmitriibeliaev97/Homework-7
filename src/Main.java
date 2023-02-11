@@ -87,6 +87,18 @@ public class Main {
     }
     public static void task6 () {
         System.out.println("Задача 6");
+        double deposit = 15000;
+        double percentPerMonth = 0.07;
+
+        for (int month = 1; month <= 9 * 12; month++) {
+
+            deposit *= (1 + percentPerMonth);
+
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + " Итого накоплений " + deposit);
+            }
+
+        }
 
     }
     public static void task7 () {
