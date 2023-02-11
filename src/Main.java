@@ -53,6 +53,18 @@ public class Main {
     }
     public static void task4 () {
         System.out.println("Задача 4");
+        double deposit = 15000;
+        double percentPerMonth = 0.07;
+        int totalMoney = 12_000_000;
+        int month = 1;
+
+        while (deposit <= totalMoney) {
+
+            deposit *= (1 + percentPerMonth);
+            System.out.println("Месяц " + month + " Итого накоплений " + deposit);
+            month++;
+
+        }
 
     }
     public static void task5 () {
