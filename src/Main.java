@@ -111,6 +111,14 @@ public class Main {
     }
     public static void task8 () {
         System.out.println("Задача 8");
+        int nowYear = 2023;
+        int fromYear = nowYear - 200;
+        int finishYear = nowYear + 100;
+        for (int i = fromYear; i <= finishYear; i++) {
+            if (i % 79 == 0) {
+                System.out.println(i);
+            }
+        }
 
     }
 }
