@@ -41,6 +41,14 @@ public class Main {
     }
     public static void task3 () {
         System.out.println("Задача 3");
+        int population = 12_000_000;
+        int fertility = 17;
+        int mortality = 8;
+        int years = 10;
+        for (int i = 1; i <= years; i++) {
+            population += (population / 1000 * (fertility - mortality));
+            System.out.println("Год " + i + ", численность населения составляет " + population);
+        }
 
     }
     public static void task4 () {
